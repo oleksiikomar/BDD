@@ -10,7 +10,7 @@ from splinter import Browser
 @given('I Load "{url}"')
 def open_url(context, url):
     context.browser = Browser('chrome')
-    context.browser.visit("http://www.google.com/")
+    context.browser.visit(url)
 
 @when('Fill in the form with "{search_phrase}"')
 def fill_the_search_form(context, search_phrase):
